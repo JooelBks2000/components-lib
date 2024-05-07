@@ -9,7 +9,7 @@
 </script>
 
 <template>
-  <button class="mu-button" :class="type">
-    <slot></slot>
+  <button type="button" :class="classes" :style="style" @click="() => onClick?.()">
+    {{ label }}
   </button>
 </template>

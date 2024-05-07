@@ -4,10 +4,11 @@ import type button from './button.vue';
 export type Type = 'primary' | 'success' | 'error';
 
 export const ButtonProps = {
-  type: {
-    type: String as PropType<Type>,
-    default: 'default',
-  },
+  type: String as PropType<Type>,
+  classes: Object,
+  style: Object,
+  onClick: Function,
+  label: String,
 };
 
 export type ButtonPropsType = ExtractPropTypes<typeof ButtonProps>;

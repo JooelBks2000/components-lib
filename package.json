@@ -32,7 +32,9 @@
     "lint:staged": "lint-staged",
     "cz": "czg",
     "prepare": "husky install",
-    "release": "bump package.json packages/package.json docs/package.json"
+    "release": "bump package.json packages/package.json docs/package.json",
+    "story:dev": "pnpm run -C stories storybook",
+    "story:build": "pnpm run -C stories build-storybook"
   },
   "dependencies": {
     "@jsxiaosi/utils": "^0.0.18",
